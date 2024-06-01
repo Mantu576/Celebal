@@ -183,7 +183,7 @@ EXEC GetOrderDetails @OrderID = 999;
 
 --Question No 4
 -- Create a procedure DeleteOrderDetails that takes OrderID and ProductID and deletes that from Order Details table. Your procedure should validate parameters. It should retum an error
--- code (-1) and print a message if the parameters are invalid. Parameters are valid if the given order ID appears in the table and if the given product ID appears in that order.
+-- code (-1) and print a message if the parameters are invalid. Parameters are valid if the given order ID appears in the table and if the given product ID appearsÂ inÂ thatÂ order.
 
 
 CREATE PROCEDURE DeleteOrderDetail
@@ -289,7 +289,7 @@ WHERE CAST(od.OrderDate AS date) = CAST(GETDATE() - 1 AS date)
 
 -- Use a CREATE VIEW statement to create a view called MyProducts. Your view should contain the ProductID, ProductName, QuantityPerUnit and Unit Price columns from the Products table. It
 -- should also contain the CompanyName column from the Suppliers table and the CategoryName column from the Categories table. Your view should only contain products that are 
--- not discontinued. 
+-- notÂ discontinued. 
 
 
 -- Create view MyProducts
